@@ -19,7 +19,9 @@ create table routes
 	side_trips text null,
 	suggested_stops text null,
 	mad_world text null,
-	KML_file longblob null
+	KML_file longblob null,
+	constraint routes_db_id_uindex
+		unique (db_id)
 )
 ;
 
